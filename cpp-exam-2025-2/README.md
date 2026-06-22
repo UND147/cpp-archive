@@ -48,51 +48,6 @@
 - `string getCoordinatesP2()` - 두 번째 점 좌표 문자열 반환
 - `int getX1()`, `int getY1()`, `int getX2()`, `int getY2()` - 각 좌표값 정수 반환
 
-## 💻 빌드 및 실행
-
-### Visual Studio
-```bash
-1. Visual Studio에서 새 C++ 콘솔 프로젝트 생성
-2. 모든 .h, .cpp 파일을 프로젝트에 추가
-3. 빌드 및 실행 (F5)
-```
-
-### 명령줄 컴파일
-```bash
-# Windows (MSVC)
-cl my_point001.cpp my_line001.cpp my_line_test.cpp /EHsc
-
-# Linux/Mac (g++)
-g++ -o linetest my_point001.cpp my_line001.cpp my_line_test.cpp
-./linetest
-```
-
-## 🎮 사용 방법
-
-1. 프로그램 실행
-2. 수평선의 두 점 좌표 입력
-   - 같은 점을 입력하면 재입력 요구
-   - y좌표가 다르면 재입력 요구
-3. 수직선의 두 점 좌표 입력
-   - 같은 점을 입력하면 재입력 요구
-   - x좌표가 다르면 재입력 요구
-4. 교차 여부 자동 출력
-
-### 실행 예시
-```
-수평선을 만들기 위한 두 점의 좌표를 입력하세요.
-첫 번째 점 (x1, y1): 0 5
-두 번째 점 (x2, y2): 10 5
-수평선이 생성되었습니다.
-
-수직선을 만들기 위한 두 점의 좌표를 입력하세요.
-첫 번째 점 (x1, y1): 5 0
-두 번째 점 (x2, y2): 5 10
-수직선이 생성되었습니다.
-
-(5, 0) 점과 (5, 10) 점로 된 선분과 (0, 5) 점과 (10, 5) 점으로 된 선분은 교차한다.
-```
-
 ## 🛠 기술적 특징
 
 ### 입력 검증
@@ -139,14 +94,11 @@ g++ -o linetest my_point001.cpp my_line001.cpp my_line_test.cpp
 
 ## 📄 파일 구조
 ```
-cpp_Exam/
+cpp-exam-2025-2/
 ├── my_point001.h        # Point 클래스 선언
 ├── my_point001.cpp      # Point 클래스 구현
 ├── my_line001.h         # Line 클래스 선언
 ├── my_line001.cpp       # Line 클래스 구현
-├── my_line_test.cpp      # 메인 프로그램
-└── README.md           # 프로젝트 설명
+├── my_line_test.cpp     # 메인 프로그램
+└── README.md
 ```
-
-
-**Contact**: [GitHub Profile](https://github.com/UND147)
